@@ -1,0 +1,228 @@
+<<!DOCTYPE html>
+
+<html lang="fr"><!-- L'en-tête -->
+
+<head>
+
+	<title>Commande</title>
+
+	<meta charset="utf-8">
+
+	<link href="questionnaire.cuisine.css" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width">
+
+</head>
+
+
+
+<body>
+
+
+
+<nav>
+<form name="order">
+
+	<h1 class="titre">Questionnaire </h1>
+
+<span id="dateheure"></span>
+
+<h2>Coordonnées</h2>
+
+	<div class="container">
+
+	<input type="text" name="nom" placeholder="Nom" required>
+
+	<input type="text" name="prenom" placeholder="Prénom" required>
+
+	<input type="email" name="email" placeholder="email " required>
+
+
+</div>
+
+<strong>Qu'elle type de site : </strong>
+
+<div class="container">
+
+<select name="livraison" id="livraison" size=1>
+
+<option value="Video">video
+
+<option value="texte">texte
+
+</select>
+
+</div>
+
+<strong>aimez-vous cuisiner ?</strong>
+
+<div class="container">
+
+<input type="radio" name="oui">oui
+
+<input type="radio" name="non">non
+
+</div>
+
+<strong>combien de temps cuisinez vous chaque jour ?</strong>
+<br>
+<div class="container">
+
+<input type="radio" name="30 min">30 min
+
+<input type="radio" name="15 min"> 15 min
+
+<input type="radio" name="45 min"> 45 min
+
+<input type="radio" name="60 min"> 60 min
+
+</div>
+
+</div>
+<br>
+<strong>aimez-vous decouvrir de nouvelle recette ?</strong>
+
+<div class="container">
+
+<input type="radio" name="oui">oui
+
+<input type="radio" name="non">non
+
+</div>
+
+</div>
+<br>
+<strong>aimez-vous souvent dans de site de cuisine ?</strong>
+
+<div class="container">
+
+<input type="radio" name="oui">oui
+
+<input type="radio" name="non">non
+
+</div>
+
+
+
+
+<strong>Je souhaite recevoir des notification:</strong>
+
+<input type="checkbox" name=”facture” ><p>
+
+
+
+<div class="container">
+
+<strong>preferé-vous : </strong>
+
+<select name="cuisiner" id="entreeId" >
+
+<option value="Oriental">oriental
+
+<option value="indienne">indienne
+
+</select>
+
+</select>
+
+</div>
+
+<div class="container">
+
+<input type="text" name="aliment que vous aimez" placeholder="aliment que vous aimez" required>
+
+<input type="text" name="aliment que vous aimez pas" placeholder="aliment que vous aimez pas" required>
+
+</div>
+
+
+<p>
+
+<button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
+
+<button type="button" class="btn"onclick="supprimer()" >Supprimer</button>
+
+<button type="reset" class="btn" >Annuler</button>
+
+</form>
+
+
+
+<main>
+
+<table id="table_form">
+
+<tr>
+
+<th>Nom</th>
+
+<th>email</th>
+
+<th>Qu'elle type de site</th>
+
+<th>qu'elle type du cuisine aimez-vous</th>
+
+<th>qu'elle aliment aimez vous </th>
+
+<th>aliment que vous n'aimez pas  </th>
+
+</tr>
+
+</table>
+
+</main>
+<script>
+
+console.log();
+
+var orderForm=document.forms.order;
+
+function bienvenue()
+
+{
+
+alert("alerte salut");
+
+}
+
+function ajouter()
+
+{
+
+var createTr=document.createElement('tr');
+
+for(var i=1; i<7; i++)
+
+{
+
+this["td"+i]=document.createElement('td');
+
+}
+
+td1.textContent=orderForm.elements['nom'].value;
+
+td2.textContent=orderForm.elements['email'].value;
+
+td3.textContent=orderForm.elements['livraison'].value;
+
+td4.textContent=orderForm.elements['cuisiner'].value;
+
+td5.textContent=orderForm.elements['aliment que vous aimez'].value;
+
+td6.textContent=orderForm.elements['aliment que vous aimez pas'].value;
+
+for(i=1;i<7;i++)
+
+{
+
+createTr.append(this["td"+i]);
+
+}
+
+table_form.appendChild(createTr);
+
+}
+
+</script>
+</nav>
+</body>

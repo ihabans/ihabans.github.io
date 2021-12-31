@@ -1,0 +1,88 @@
+body {
+  background-image: url("AS.png");
+  background-repeat: no-repeat;
+  background-color: #2E4053 ;
+  background-attachment: fixed;
+  background-size: 130% 120%;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 150px;
+
+}
+.titre{
+  color: #F5B041;
+  font-family: "Monaco",Monospace;
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  z-index: 1;
+  position: relative;
+  top: 50px;
+  text-shadow: 5px 5px darkcyan;
+
+}
+h2{
+  color: #F9EBEA;
+  font-family: "Monaco",monospace;
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 5px 5px #558abb;
+
+}
+h3{
+  color: beige;
+  font-family: "Monaco",monospace;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  text-decoration: underline;
+}
+h4{
+  color: #FFA07A;
+  font-family: "Lucida Calligraphy",cursive;
+  font-size: 20px;
+}
+
+nav{
+  background-color: rgb(23, 32, 42,0.7) ;
+  padding-left: 100 px;
+  text-align: center;
+  color: #D5DBDB;
+  font-size: 20px;
+  font-family: verdana,Sans-serif;
+}
+
+img{
+  text-align: left;
+  filter: drop-shadow(0 0 0.75rem beige);
+  max-width: 100%;
+}
+.etapes{
+  text-align: left;
+}
+.Ingredient{
+  text-align: left ;
+}
+p:hover{
+  text-shadow: 5px 5px black;
+
+}
+.footer{
+  text-align: center;
+  bottom: 0px;
+  color: white;
+  position: fixed;
+  
+  font-family:"Lucida Console",Monospace;
+  border: black;
+  border-radius: 0px;
+  background-color: black;
+  
+  margin-top: 0px;
+  margin-left: -50px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 102%;
+  display: ;
+  
+}

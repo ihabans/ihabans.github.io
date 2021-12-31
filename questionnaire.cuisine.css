@@ -1,0 +1,111 @@
+body {
+  background-image: url("vectorpng.png");
+  background-repeat: no-repeat;
+  background-color: #2E4053 ;
+  background-attachment: fixed;
+  background-size: 130% 120%;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 150px;
+}
+
+
+.boite{
+	margin: auto;
+	
+	text-align: center;
+	display: column;
+	font-family: "Monaco",Monospace;
+}
+
+
+.footer{
+	text-align: center;
+	bottom: 0px;
+	color: white;
+	position: fixed;
+	
+	font-family:"Lucida Console",Monospace;
+	border: black;
+	border-radius: 0px;
+	background-color: black;
+	
+	margin-top: 0px;
+	margin-left: -10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	width: 102%;
+	display: ;
+	
+}
+table {
+      border-collapse: collapse;
+      border: 2px solid black;
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+      
+
+    }
+ 
+    td,th {
+      border: 1px solid black;
+      padding: 10px 20px;
+    }
+ 
+    td {
+      text-align: center;
+    }
+ 
+    th{
+      background-color: rgba(0,255,255);
+    }
+
+
+    
+.btn, .btn1{
+        background-color: rgba(50,100,100);
+        border:none;
+        width:70px;
+        height:30px;
+        text-align: center;
+}
+ 
+.btn:hover{
+        background-color: rgba(0,255,255);
+ 
+}
+
+
+nav{
+  background-color: rgb(23, 32, 42,0.7) ;
+  padding-left: 100 px;
+  text-align: center;
+  color: #D5DBDB;
+  font-size: 20px;
+  font-family: verdana,Sans-serif;
+}
+h2{
+  color: #F9EBEA;
+  font-family: "Monaco",monospace;
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 5px 5px #558abb;
+
+}
+
+
+.titre{
+  color: #F5B041;
+  font-family: "Monaco",Monospace;
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  z-index: 1;
+  position: relative;
+  top: 50px;
+  text-shadow: 5px 5px darkcyan;
+
+}
+main{
+	margin-left:15%;
+}
