@@ -6,3 +6,22 @@ body {
   background-size: 130% 120%;
 
 }
+.footer{
+  text-align: center;
+  bottom: 0px;
+  color: white;
+  position: fixed;
+  
+  font-family:"Lucida Console",Monospace;
+  border: black;
+  border-radius: 0px;
+  background-color: black;
+  
+  margin-top: 0px;
+  margin-left: -50px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 102%;
+  display: ;
+  
+}
