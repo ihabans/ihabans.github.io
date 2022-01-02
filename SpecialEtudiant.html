@@ -8,99 +8,144 @@
   </head>
 <body>
   
-    <h1 class="titre">Economique et astucieux !</h1>
+  <h1 class="titre">Economique et astucieux !</h1>
+    <table>
+      <thead>
+      </thead>
+        <tbody>
+      <tr>
+        <th scope="row">Nom des plats</th>
+        <th scope="row">Illustration</th>
+        <th scope="row">ingredient </th>
+        <th scope="row">temps</th>
+      </tr>
+      <tr>
+      
+        <th scope="row">croque monsieur mozarella, avocat, tomate </th>
+        <th scope="row"><img class="image1" src="croque.jpg" alt=""></th>
+        
+        
+        <td >-2 tranche de pain de mie<br>
+            -1 avacat<br>
+            -mozarella<br>
+            -tomate<br>
+            -Huile d'olive<br>
+            -beurre<br>
+            -sel<br>
+            -poivron<br>
+        </td>
+        <td>  &#128337; 15 min </td>
+        </tr>
+      <tr>
+        <th scope="row">Quesadilla</th>
+        <th scope="row"><img class="image1" src="quesadillas.jpg" alt=""></th>
+        <td>
+          -Tortilla <br>
+          -poulet<br>
+          -fromage rapé<br>
+          -créme fraiche<br>
+          -huile d'olive<br>
+          -sel
+        </td>
+        <td>  &#128337; 30 min</td>
+        </tr>
+          <tr>
+            <th scope="row">Pommes de terre <br> sautées dorées<br> et croustillante</th>
+            <th scope="row"><img class="image1" src="pomme.jpg" alt="" ></th>
+        <td>-6 Pommes de terre à chair ferme<br>
+            -3 cuillere à soupe d'huile d'olive<br>
+            -sel<br>
+            -un peu d'ail<br>
+        </td>
+        <td>  &#128337;45 min</td>
+        </tr>
+      
+    </tbody>
+    
+    
+
+    </table>
+    
+    
+
+  <div id = "album-table">
   <table>
-  <thead>
-  </thead>
-  <tbody>
-   <center>
-<nav id="navigation">
-   <button onclick="toggleTable()">MENU</button><button onclick="toggleTable1()">ALBUM</button>
-</nav>
-</center>
-     <div class="tableau"> 
-     <table border="1">
-       <style>
-      
-    </style>
-    <tr>
-      <th scope="row">Nom des plats</th>
-      <th scope="row">Illustration</th>
-      <th scope="row">ingredient </th>
-      <th scope="row">temps</th>
-    </tr>
-    <tr>
     
-      <th scope="row">croque monsieur mozarella, avocat, tomate </th>
-      <th scope="row"><img class="image1"src="croque.jpg"></th>
       
-      
-      <td >-2 tranche de pain de mie<br>
-          -1 avacat<br>
-          -mozarella<br>
-          -tomate<br>
-          -Huile d'olive<br>
-          -beurre<br>
-          -sel<br>
-          -poivron<br>
-      </td>
-      <td>  &#128337 15 min </td>
-      </tr>
-    <tr>
-      <th scope="row">Quesadilla</th>
-      <th scope="row"><img class="image1"src="quesadillas.jpg"></th>
-      <td>
-        -Tortilla <br>
-        -poulet<br>
-        -fromage rapé<br>
-        -créme fraiche<br>
-        -huile d'olive<br>
-        -sel
-      </td>
-      <td>  &#128337 30 min</td>
-      </tr>
-        <tr>
-          <th scope="row">Pommes de terre <br> sautées dorées<br> et croustillante</th>
-          <th scope="row"><img class="image1"src="pomme.jpg"></th>
-      <td>-6 Pommes de terre à chair ferme<br>
-          -3 cuillere à soupe d'huile d'olive<br>
-          -sel<br>
-          -un peu d'ail<br>
-      </td>
-      <td>  &#128337 45 min</td>
-      </tr>
+   </table>
+
+   
+
     
-  </tbody>
-  
-  <tfoot>
-    <thead>
-    <tr>
-      <th scope="row">PhotoId</th>
-      <th scope="row">Id</th>
-      <th scope="row">Titre</th>
-      <th scope="row">Url1</th>
-  
-      
-    </tr>
-  </thead>
+    <div ><h4>Chronomètre</h4>
 
-  </tfoot>
 
-      </table>
   </div>
-    
- </table>
 
-    <div class="basdepage">
-      <footer class="footer">
-        <p>(C)Site Realisé par des éléves d'Efrei Paris</p>
-        <a href=Accueil.html>retour page d'acceuil</a>
-      </footer>
-    </div>   
-<a href=Accueil.html>retour page d'acceuil</a>
-  
-  <div align="center"><h4>Chronomètre</h4>
-  <script language='JavaScript'>
+  <form action="accept" method="post" name="formu" id="formu">
+    <p > 
+      <input name="heure" type="text" id="heure" value="0 jour(s) et 00 : 00 : 00"> ou    <input name="seco" type="text"  value="00"> seconde(s).
+    </p>
+    <p > 
+      <input type="button" name="Submit" value="Start!" onClick="Chrono();">
+      <input type="button" name="Submit2" value="Stop!" onClick="window.clearTimeout(chrono);">
+      <input type="button" name="Submit3" value="RAZ" onClick="if (confirm('Souhaitez vous mettre le compteur à zéro?')){s=0;m=0;j=0;h=0;ss=0; window.status = 'Chrono 0 jour(s) et 00 : 00 : 00' ; document.formu.heure.value ='0 jour(s) et 00 : 00 : 00';document.formu.seco.value='0'+0;}">
+    </p>
+    <p>
+      Chronométre vous et meusurer en combien temps réaliser-vous c'est recette</p>
+    </form>
+
+
+  </div> 
+      <div class="basdepage">
+        <footer class="footer">
+         
+          <p>(C)Site Realisé par des éléves d'Efrei Paris</p>
+          
+        </footer>
+      </div>
+      <script >
+  (function () {
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+    function startTime() {
+        var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout(function () {
+            startTime()
+        }, 500);
+    }
+    startTime();
+})();
+</script>
+<script >
+  function toggleTable() {
+  var x = document.getElementById("album-table");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else { 
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+<script >
+  function toggleTable1() {
+  var x = document.getElementById("menu-table");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else { 
+    x.style.display = "block";
+  }
+}
+</script>
+<script >
 ss=0;
 s=00;
 m='0'+0;
@@ -128,107 +173,12 @@ chrono=window.setTimeout("Chrono();",1000);
 
 
 </script>
-</div>
-
-<form action="" method="post" name="formu" id="formu">
-  <p align="center"> 
-    <input name="heure" type="text" id="heure" value="0 jour(s) et 00 : 00 : 00"> ou    <input name="seco" type="text"  value="00"> seconde(s).
-  </p>
-  <p align="center"> 
-    <input type="button" name="Submit" value="Start!" onClick="Chrono();">
-    <input type="button" name="Submit2" value="Stop!" onClick="window.clearTimeout(chrono);">
-    <input type="button" name="Submit3" value="RAZ"onClick="if (confirm('Souhaitez vous mettre le compteur à zéro?')){s=0;m=0;j=0;h=0;ss=0; window.status = 'Chrono 0 jour(s) et 00 : 00 : 00' ; document.formu.heure.value ='0 jour(s) et 00 : 00 : 00';document.formu.seco.value='0'+0;}">
-  </p>
-  <p align="center">
-    Chronométre vous et meusurer en combien temps réaliser-vous c'est recette
-  </p>
-<center>
-<div id="time"></div>
-<script type="text/javascript">
-  (function () {
-    function checkTime(i) {
-        return (i < 10) ? "0" + i : i;
-    }
-
-    function startTime() {
-        var today = new Date(),
-            h = checkTime(today.getHours()),
-            m = checkTime(today.getMinutes()),
-            s = checkTime(today.getSeconds());
-        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
-        t = setTimeout(function () {
-            startTime()
-        }, 500);
-    }
-    startTime();
-})();
-</script>
-
-<script type="text/javascript">
-  function toggleTable() {
-  var x = document.getElementById("album-table");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else { 
-    x.style.display = "block";
-  }
-}
-</script>
-
-</center>
-<script type="text/javascript">
-  function toggleTable1() {
-  var x = document.getElementById("menu-table");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else { 
-    x.style.display = "block";
-  }
-}
-</script>
-<script type="text/javascript">
-  function getAlbum(){
-    fetch("https://jsonplaceholder.typicode.com/albums/1/photos?_start=")
-  .then((response) => response.json())
-  .then(function (data) {
-  console.log(data);
- 
- }
- ajouter();
-}
-</script>
-
-<script type="text/javascript">
-  function ajouter(){
-    var createTr=document.createElement('tr');
-    for(var i=1; i<7; i++){
-      this["td"+i]=document.createElement('td');}
-
-td1.textContent=orderForm.elements['PhotoId'].value;
-
-td2.textContent=orderForm.elements['Id'].value;
-
-td3.textContent=orderForm.elements['Titre'].value;
-
-td4.textContent=orderForm.elements['Url1'].value;
-
-td5.textContent=orderForm.elements['Url2'].value;
- 
+  
+</body>
 
 
-for(i=1;i<6;i++)
 
-{
 
-createTr.append(this["td"+i]);
 
-}
-
-table_form.appendChild(createTr);
-
-}
-
-</script>
-  </body>
 
 </html>

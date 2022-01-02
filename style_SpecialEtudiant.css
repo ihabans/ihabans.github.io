@@ -47,6 +47,7 @@ td,th{
   color: white;
   position: fixed;
   
+  
   font-family:"Lucida Console",Monospace;
   border: black;
   border-radius: 0px;
@@ -59,4 +60,11 @@ td,th{
   width: 102%;
   display: ;
   
+}
+
+h4{
+  text-align: center;
+}
+p{
+  text-align: center;
 }
