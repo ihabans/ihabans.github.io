@@ -68,3 +68,7 @@ h4{
 p{
   text-align: center;
 }
+.logo:hover{
+  background-color: darkcyan;
+  
+}
