@@ -1,0 +1,233 @@
+body, html {
+    background: #2c2e3e;
+    font-family: 'Jost';
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Jost';
+    flex: auto;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+h3{
+    flex: auto;
+    margin: auto;
+    text-align: center;
+    font: small-caps bold 60px/1 sans-serif;
+    color: aliceblue;
+    
+    
+}
+h2{
+    text-align: right;
+    font-family: 'Jost';
+    margin-right: 3%;
+    color: aliceblue;
+}
+.style1{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 37%;
+    margin-bottom: 25px ;
+    margin-top: 3%;
+    font-family: 'Jost';
+    
+    
+}
+.style3{
+    margin-top: 90px;
+    margin-bottom: 25px;
+    color: white;
+    font-family: 'Jost';
+}
+label{
+    color:whitesmoke;
+    font-family: 'Jost';
+}
+.bt{
+   background-color: whitesmoke;
+   border-radius: 30px;
+   width: 40%;
+   height: 55px;
+   margin: 20px;
+   font-family: 'Jost';
+}
+.label{
+    color: whitesmoke;
+    font-family: 'Jost';
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Jost';
+}
+::placeholder{
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Raleway',sans-serif; font-size: 22px; font-weight: 800; line-height: 72px; text-align: center; text-transform: uppercase;
+}
+
+/* From uiverse.io by @menezes11 */
+button {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #0003a1;
+    background: rgb(2, 129, 202);
+    font: white;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 20px; 
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Jost';
+    
+   }
+   
+   button:hover {
+    box-shadow: 0 0 10px #21435a, 0 0 25px #1f2985, 0 0 50px #345fb4c9;
+    transition-delay: 0.6s;
+   }
+   
+   button span {
+    position: absolute;
+   }
+   
+   button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+   }
+   
+   button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+   }
+   
+   button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffffff);
+   }
+   
+   button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffffff);
+   }
+   
+   button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   button:active {
+    background: #ffffff;
+    background: linear-gradient(to top right, #ffffff, #ffffff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #f5f5f5, 0 0 8px #ffffff, 0 0 8px #ffffff;
+    transition: 0.1s;
+   }
+   
+   button:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+   .style4{
+        
+    display: flex;
+       color: white;
+       font: white;
+       
+       
+   }
+   a{
+    text-decoration: none;
+   }
+   /*aihaiuahaipu*/
+   .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .box select {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .box::before {
+    content: "\f13a";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+  }
+  
+  .box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .box select option {
+    padding: 30px;
+  }
